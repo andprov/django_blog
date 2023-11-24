@@ -14,11 +14,6 @@
 - Пользователи могут заходить на чужие страницы, читать 
 и комментировать чужие посты.
 
-# Технологии
-- Python 3.9
-- Django 3.2.16
-- SQLite3
-
 # Установка и запуск
 Клонировать репозиторий:
 ```
@@ -45,7 +40,7 @@ source venv/bin/activate
 
 Обновить pip:
 ```
-python3 -m pip install --upgrade pip
+pip install --upgrade pip
 ```
 
 Установить библиотеки:
@@ -55,20 +50,20 @@ pip install -r requirements.txt
 
 Выполнить миграции:
 ```
-python3 blogicum/manage.py migrate
+python blogicum/manage.py migrate
 ```
 
 Загрузить фикстуры DB:
 ```
-python3 blogicum/manage.py loaddata db.json
+python blogicum/manage.py loaddata db.json
 ```
 
 Создать суперпользователя:
 ```
-python3 blogicum/manage.py createsuperuser
+python blogicum/manage.py createsuperuser
 ```
 
 Запустить сервер django:
 ```
-python3 blogicum/manage.py runserver
+python blogicum/manage.py runserver
 ```
